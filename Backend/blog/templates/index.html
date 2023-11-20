@@ -1,0 +1,14 @@
+{% extends "base.html" %} 
+{% block title %}Darmin RC - Home Page{% endblock title %} 
+
+{% block content %}
+  <nav>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'blog:home' %}">Blog</a></li>
+    </ul>
+  </nav>
+
+  <h2>Home Page</h2>
+  <!-- Contenido de la página de inicio -->
+{% endblock content %}

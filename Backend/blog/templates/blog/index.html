@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Darmin RC - Blog{% endblock title %}
+{% block content %}
+<h1>Blog HomePage</h1>
+
+{% for post in posts %}
+<a href="{% url 'blog:post-detail' slug=post.slug %}">
+{{ post.title }}
+{{ post.excerpt }}    
+</a>
+{% endfor %}
+
+{% endblock content %}
